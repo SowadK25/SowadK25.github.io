@@ -1,23 +1,23 @@
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,table {font-family: "Raleway", sans-serif}
 
-.w3-third img{margin-bottom: -6px; cursor: pointer}
-
+.w3-third img{
+    margin-bottom: -6px; 
+    cursor: pointer
+}
 .w3-third img:hover{opacity: 1}
-
 img {
     object-fit: cover
 }
-
-.title {
+.about {
     color: white;
     text-shadow: 2px 2px 5px blue;
     border-radius: 10%;
+    
 }
 
 .zoom {
     transition: transform .3s;
 }
-
 .zoom:hover {
     -ms-transform: scale(1.25);
     -webkit-transform: scale(1.25);
