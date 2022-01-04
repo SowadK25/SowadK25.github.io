@@ -391,6 +391,11 @@ ul {
   .home .wad-text {
     text-align: center;
   }
+  
+  .home .img-crop {
+    max-width: 14em;
+    height: 14em;
+  }
 
   .home .home-content .text-animation {
     font-size: 2em;
