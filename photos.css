@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.socials {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.socials a {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.1em 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 1.5em;
+  background: rgba(247, 243, 243, 0.1);
+  border-radius: 20%;
+}
+
+.socials a:hover {
+  background: white;
+}
+
+.socials .github:hover {
+  color: black;
+}
+
+.socials .instagram:hover {
+  color: rgb(247, 23, 217);
+}
+
+.socials .linkedin:hover {
+  color: dodgerblue;
+}
+
+.socials .email:hover {
+  color: rgb(240, 53, 47);
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -5;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  padding: 0.8em 5em;
+  max-width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 8vh;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  max-width: 100%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  padding: 0.8em 1em;
+  font-size: 1.1em;
+  letter-spacing: 0.15em;
+  color: white;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.nav-links li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(30, 144, 255);
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
+  width: 0;
+  font-weight: bolder;
+}
+
+.nav-links li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
+@media screen and (max-width: 885px) {
+  .nav-links li a:after {
+    background: floralwhite;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: dodgerblue;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    clip-path: circle(100px at 90% -25%);
+    -webkit-clip-path: circle(100px at 90% -25%);
+    transition: all 1s ease-out;
+    opacity: 0.8;
+    z-index: 10;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 4px;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+    transform: translate(-5%, -5%);
+    z-index: 11;
+    transition: all 0.8s ease;
+  }
+
+  .hamburger.open {
+    transform: rotate(180deg);
+  }
+
+  .nav-links.open {
+    clip-path: circle(1300px at 90% -25%);
+    -webkit-clip-path: circle(1300px at 90% -25%);
+    opacity: 1;
+  }
+}
