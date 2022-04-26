@@ -268,15 +268,20 @@ ul {
 
 .project-content {
   display: grid;
-  grid-template-columns: 40% 60%;
   grid-gap: 100px 10px;
   padding: 1em 2em;
   color: white;
-  padding-left: 4em;
   padding-top: 4em;
 }
 
-.project-content img {
+.project-content .grid-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+}
+
+.project-content .grid-content img {
   width: 100%;
   height: 100%;
 }
@@ -287,6 +292,10 @@ ul {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+}
+
+.project-content .grid-content .text {
+  width: 60%;
 }
 
 .project-content .text h1 {
@@ -326,7 +335,7 @@ ul {
   }
 
   .project-content .text p {
-    padding-bottom: 5em;
+    
   }
 
   .nav-links li a:after {
@@ -385,13 +394,33 @@ ul {
     width: 100%;
     height: auto;
   }
+
+  .project-content .grid-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  .project-content .img-crop {
+    max-width: 18em;
+    height: 18em;
+  }
+
+  .project-content .grid-content .text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .project-content .grid-content .text h1 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .home .wad-text {
     text-align: center;
   }
-  
+
   .home .img-crop {
     max-width: 14em;
     height: 14em;
@@ -432,10 +461,5 @@ ul {
   .container-project h1 {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-  }
-
-  .project-content .img-crop {
-    max-width: 18em;
-    height: 18em;
   }
 }
