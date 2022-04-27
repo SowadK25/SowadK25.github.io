@@ -236,6 +236,11 @@ ul {
   width: 15em;
   height: 15em;
   margin: 1.5em 0em;
+  transition: all 0.5s ease;
+}
+
+.about-content .cd img:hover {
+  opacity: 0.7;
 }
 
 .about-content .cd p {
@@ -289,6 +294,21 @@ ul {
   border-radius: 50%;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+@keyframes move {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.project-content .img-crop:hover {
+  opacity: 0.6;
+  animation: move 3s;
 }
 
 .project-content .grid-content .text {
