@@ -149,7 +149,7 @@ ul {
 }
 
 .home .img-crop {
-  max-width: 400px;
+  width: 400px;
   height: 400px;
   border-radius: 50%;
   position: relative;
