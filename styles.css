@@ -17,6 +17,7 @@ html {
   top: 35%;
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .socials a {
